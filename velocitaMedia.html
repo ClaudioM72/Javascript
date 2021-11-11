@@ -3,22 +3,15 @@
 <head>
 <title>Velocità media</title>
 <meta charset="utf-8"/>
+<script src="velocitaMedia.js"></script>
 </head>
 <body>
 <h1>Velocità media in chilometri orari e metri al secondo</h1>
 <p>Inserisci il tempo impiegato: <input id="min" value="0"/>' <input id="sec" value="0"></p>
 <p>Inserisci lo spazio percorso: <input id="metri" value="100"/> metri</p>
-<input type="button" value="Calcola la velocità media" onclick="
-min=1*document.getElementById('min').value;
-sec=1*document.getElementById('sec').value;
-metri=1*document.getElementById('metri').value;
-sec=sec+min*60;
-vms=metri/sec;
-vkmh=vms*3.6;
-document.getElementById('vms').innerHTML = vms;
-document.getElementById('vkmh').innerHTML = vkmh;"/>
+<input type="button" value="Calcola la velocità media" onclick="velocitaMedia()"/>
 </p>
-<p>La velocità media è pari a <span id="vms">...</span>m/s (metri al secondo).</p>
-<p>La velocità media è pari a <span id="vkmh">...</span>km/h (chilometri orari).</p>
+<p>La velocità media è pari a <span id="vms">...</span> m/s (metri al secondo).</p>
+<p>La velocità media è pari a <span id="vkmh">...</span> km/h (chilometri orari).</p>
 </body>
 </html>
