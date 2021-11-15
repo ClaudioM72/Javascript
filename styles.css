@@ -1,0 +1,18 @@
+#montante{
+  font-weight: bold;
+}
+
+p {
+  font-size: 110%;
+}
+
+input {
+  text-align: center;
+  width: 100;
+  font-style: 100%;
+}
+
+.btn {
+  width: auto;
+  font-size: 150%;
+}
